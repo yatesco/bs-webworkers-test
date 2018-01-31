@@ -2,6 +2,8 @@
 'use strict';
 
 
+console.log("about to load");
+
 var worker = new Worker("worker.bs.js");
 
 var msg = {
@@ -20,7 +22,10 @@ worker.onmessage = msgBackHandler;
 
 console.log("Hello, BuckleScript and Reason!");
 
-exports.worker         = worker;
-exports.msg            = msg;
-exports.msgBackHandler = msgBackHandler;
-/* worker Not a pure module */
+export {
+  worker         ,
+  msg            ,
+  msgBackHandler ,
+  
+}
+/*  Not a pure module */

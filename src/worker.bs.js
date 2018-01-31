@@ -9,4 +9,7 @@ self.onmessage = (function (e) {
     return /* () */0;
   });
 
+export {
+  
+}
 /*  Not a pure module */

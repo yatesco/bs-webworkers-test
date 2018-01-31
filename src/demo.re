@@ -1,3 +1,5 @@
+Js.log("about to load");
+
 let worker = WebWorkers.create_webworker("worker.bs.js");
 
 let msg = {"text": "Hello world"};
